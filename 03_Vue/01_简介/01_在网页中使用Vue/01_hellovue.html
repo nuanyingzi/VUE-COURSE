@@ -10,18 +10,12 @@
 </head>
 <body>
     <div id="root">
-        <h2>{{ message }}</h2>
     </div>
     <script>
         // 创建一个根组件，在Vue3中组件就是一个普通的js对象
         // 组件用来创建组件实例，组件是组件实例的模板
         const Root = {
-            data() {
-                return {
-                    message: "Vue is woodfully",
-                }
-            },
-            template: "<h1>我爱{{message}}</h1>"
+            template: "<h1>我爱Vue</h1>"
         }
         // 创建App实例
         // const app = Vue.createApp(Root)
