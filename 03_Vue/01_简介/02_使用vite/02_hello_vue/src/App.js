@@ -1,3 +1,6 @@
+// 引入子组件
+import MyButton from "./MyButton"
+
 // 创建根组件
 export default {
     data() {
@@ -6,8 +9,12 @@ export default {
             count: 0,
         }
     },
+    // 注册子组件
+    components: {
+        "my-button": MyButton,
+    },
     template: `
       <h1>{{msg}}</h1>
-      <button @click="count++">点我一下</button>--{{count}}
+      <my-button></my-button>
     `,
 }
