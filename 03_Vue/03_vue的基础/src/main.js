@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import App from './01_data__02methods__03_computed.vue'
+import App from './App.vue'
 
 
 const app = createApp(App)
