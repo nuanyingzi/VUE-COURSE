@@ -1,32 +1,17 @@
 <template>
-    <h1>组合式API</h1>
-    <p>{{msg}}</p>
-    <p>{{count}}</p>
-    <button @click="count++">click me</button>
-    <p>{{stu.name}}----{{stu.age}}----{{stu.gender}}</p>
+    <h1>{{count}}---{{msg}}</h1>
+    <button @click="fn">haha</button>
 </template>
 
-<script>
-import { reactive } from 'vue'
-export default {
-    name: "App",
-    setup() {
-        let msg = "Today is a nice day"
-        let count = 0
+<script setup>
 
-        const stu = reactive({
-            name: "tom",
-            age: 500,
-            gender: "male"
-        })
+const msg = "I like VUE"
+const count = 0
 
-        return {
-            msg,
-            count,
-            stu,
-        }
-    }
+function fn() {
+    alert("dasa")
 }
+
 </script>
 
 <style scoped>
